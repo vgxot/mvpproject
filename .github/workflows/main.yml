@@ -43,7 +43,7 @@ jobs:
       - name: change path
         run: cd vue-project
       - name: Install dependencies
-        run: run i
+        run: npm run i
       - name: Build with Vite
         run: ${{ steps.detect-package-manager.outputs.manager }} run build
       - name: Upload artifact
